@@ -15,7 +15,7 @@ function number_of_pages(){
 function get_pages(int $number_of_pages){
     $pages = array();
     for ($x = 1; $x <= $number_of_pages; $x++) {
-        $url = "https://a.wordpress.page/wp-json/wp/v2/posts?page=1\" . $x;
+        $url = "https://a.wordpress.page/wp-json/wp/v2/posts?page=1" . $x;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_URL, $url);
